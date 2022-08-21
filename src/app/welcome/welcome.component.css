@@ -1,0 +1,22 @@
+.welcome-video {
+    object-fit: fill;
+    height: 100vh;
+    width: 100%;
+
+  }
+
+.welcome-header{
+    width: 50em;
+    height: 25em;
+    left: 100px;
+    bottom: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
