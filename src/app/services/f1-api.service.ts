@@ -1,8 +1,6 @@
-import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-import * as xml2js from 'xml2js';
 @Injectable({
 	providedIn: 'root',
 })

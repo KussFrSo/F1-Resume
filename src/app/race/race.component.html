@@ -1,22 +1,15 @@
-<div>
-	<h1>Calendario Carreras 2022</h1>
-</div>
-
-<div class="race-card">
+<div
+	class="card race-card d-flex flex-column align-items-center justify-content-center">
 	<img
 		src="../../assets/img/races/bahrain.png"
 		height="100"
 		width="100"
 		alt="" />
-
-	<h1>{{ race.raceName }}</h1>
-	<div
-		style="
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		">
-		<img src="../../assets/img/flags/bhr.png" alt="" width="20" />
-		<h1>{{ race.date }}</h1>
+	<div class="card-body">
+		<h4>{{ race.raceName }}</h4>
+		<div class="d-flex justify-content-center align-items-center">
+			<img src="../../assets/img/flags/bhr.png" alt="" width="20" />
+			<h6 class="mx-3">{{ race.date }}</h6>
+		</div>
 	</div>
 </div>
