@@ -19,4 +19,11 @@ export class CalendarF1Component implements OnInit {
 			console.log(this.circuits);
 		});
 	}
+
+	// Funcion dado un circuito me devuelve el circuito a 3 posicones suyas, para el carrousel 2 row
+	getCicuit(circuit: any) {
+		return this.circuits.filter(
+			x => Number(x.round) === Number(circuit.round) + 3
+		)[0];
+	}
 }

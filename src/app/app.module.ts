@@ -6,10 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { F1ApiService } from './services/f1-api.service';
 import { RaceComponent } from './race/race.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
 	declarations: [WelcomeComponent, CalendarF1Component, RaceComponent],
-	imports: [BrowserModule, HttpClientModule, NgbModule],
+	imports: [BrowserModule, HttpClientModule, NgbModule, CarouselModule],
 	providers: [F1ApiService],
 	bootstrap: [WelcomeComponent, CalendarF1Component],
 })
