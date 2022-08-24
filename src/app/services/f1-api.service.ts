@@ -5,9 +5,14 @@ import { Observable } from 'rxjs';
 	providedIn: 'root',
 })
 export class F1ApiService {
+	baseURL: string = 'http://ergast.com/api/f1';
 	constructor(private http: HttpClient) {}
 
 	getCircuits(): Observable<any> {
-		return this.http.get('http://ergast.com/api/f1/current.json');
+		return this.http.get(`${this.baseURL}/current.json`);
+	}
+
+	getLastRace(): Observable<any> {
+		return this.http.get(`${this.baseURL}/current/last/results.json`);
 	}
 }

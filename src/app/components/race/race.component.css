@@ -1,0 +1,26 @@
+.race-card-body{
+    width: 22rem;
+
+		color: white;
+		padding-top: 20px;
+		border-radius: 10px;
+
+		background: hsla(0, 100%, 41%, 1);
+
+		background: linear-gradient(270deg, hsla(0, 100%, 41%, 1) 0%, hsla(0, 100%, 41%, 1) 63%, hsla(0, 0%, 0%, 1) 100%);
+		background: -moz-linear-gradient(270deg, hsla(0, 100%, 41%, 1) 0%, hsla(0, 100%, 41%, 1) 63%, hsla(0, 0%, 0%, 1) 100%);
+		background: -webkit-linear-gradient(270deg, hsla(0, 100%, 41%, 1) 0%, hsla(0, 100%, 41%, 1) 63%, hsla(0, 0%, 0%, 1) 100%);
+
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D00000", endColorstr="#D00000", GradientType=1 );
+
+		border: 2px solid white;
+		
+}
+
+.current-race-card{
+	box-shadow: 0px 0px 20px 10px white;
+}
+
+.race-card{
+	/* box-shadow: 0px 0px 20px white; */
+}

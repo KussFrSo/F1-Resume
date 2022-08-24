@@ -7,9 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RaceComponent implements OnInit {
 	@Input() race: any;
+	@Input() nextRace: number = 0;
 	constructor() {}
 
 	ngOnInit(): void {
 		console.log(this.race);
+		console.log(this.nextRace);
 	}
 }

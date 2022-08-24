@@ -1,0 +1,37 @@
+.calendar-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #091C2B;
+}
+
+.race-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-header{
+    color: white;
+    padding-top: 45px;
+    text-align: center;
+}
+
+/* CSS Carousel style */
+
+::ng-deep .p-carousel-items-content > .p-carousel-items-container{
+    margin-left: 150px;
+    margin-right: -115px;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}

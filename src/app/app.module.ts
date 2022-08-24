@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { CalendarF1Component } from './calendar-f1/calendar-f1.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { F1ApiService } from './services/f1-api.service';
-import { RaceComponent } from './race/race.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselModule } from 'primeng/carousel';
+import { PageModule } from './components/page.module';
+import { AppComponent } from '../app/app.component';
 
 @NgModule({
-	declarations: [WelcomeComponent, CalendarF1Component, RaceComponent],
-	imports: [BrowserModule, HttpClientModule, NgbModule, CarouselModule],
+	declarations: [AppComponent],
+	imports: [BrowserModule, HttpClientModule, NgbModule, PageModule],
 	providers: [F1ApiService],
-	bootstrap: [WelcomeComponent, CalendarF1Component],
+	bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,5 +1,8 @@
 <div
-	class="card race-card d-flex flex-column align-items-center justify-content-center">
+	class="card race-card-body d-flex flex-column align-items-center justify-content-center"
+	[ngClass]="
+		nextRace.toString() === race.round ? 'current-race-card' : 'race-card'
+	">
 	<img
 		src="../../assets/img/races/bahrain.png"
 		height="100"

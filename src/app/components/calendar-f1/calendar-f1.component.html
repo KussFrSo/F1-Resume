@@ -1,0 +1,41 @@
+<div class="calendar-container">
+	<div class="calendar-header">
+		<h1>Calendario Carreras 2022</h1>
+	</div>
+
+	<p-carousel
+		[value]="circuits"
+		styleClass="custom-carousel"
+		[numVisible]="3"
+		[numScroll]="6"
+		[circular]="false"
+		[autoplayInterval]="10000"
+		[showIndicators]="false"
+		class="pp">
+		<ng-template let-circuit pTemplate="item">
+			<!-- NgIf para que no genere el componente hasta que no tiene la informacion del padre -->
+			<!-- Para que no se genere el hijo antes de que el padre le pase la informacion -->
+			<ng-container *ngIf="!!nextRace">
+				<div style="height: 50px"></div>
+				<div>
+					<app-race [nextRace]="nextRace" [race]="circuit"></app-race>
+				</div>
+
+				<div style="height: 200px"></div>
+
+				<!-- Segundo APP-Race para poder generar la 2 columna del carrousel  -->
+				<!-- ngIf para que si no encuentra nada la funcion, que no genere
+				errores, simplemente no muestre nada -->
+
+				<div>
+					<app-race
+						style="margin-top: 20px"
+						*ngIf="getCicuit(circuit) !== undefined"
+						[nextRace]="nextRace"
+						[race]="getCicuit(circuit)"></app-race>
+				</div>
+				<div style="height: 50px"></div>
+			</ng-container>
+		</ng-template>
+	</p-carousel>
+</div>
