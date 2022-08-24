@@ -1,0 +1,29 @@
+::ng-deep div.p-avatar{
+    height: 20rem;
+    width: 20rem;
+}
+
+.avatar-card{
+    margin: 16px 16px;
+    display: inline-block;
+    width: 256px;
+    height: 400px;
+    border-radius: 4px;
+    background: #D00000;
+    border: 2px solid white;
+    color: white;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 4px;
+    position: relative;
+    top: -115px;
+    left: 26px;
+    background: #091C2B;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 5px solid white;
+}

@@ -1,4 +1,4 @@
-<div class="calendar-container">
+<div>
 	<div class="calendar-header">
 		<h1>Calendario Carreras 2022</h1>
 	</div>
@@ -10,8 +10,7 @@
 		[numScroll]="6"
 		[circular]="false"
 		[autoplayInterval]="10000"
-		[showIndicators]="false"
-		class="pp">
+		[showIndicators]="false">
 		<ng-template let-circuit pTemplate="item">
 			<!-- NgIf para que no genere el componente hasta que no tiene la informacion del padre -->
 			<!-- Para que no se genere el hijo antes de que el padre le pase la informacion -->

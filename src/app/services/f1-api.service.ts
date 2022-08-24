@@ -15,4 +15,8 @@ export class F1ApiService {
 	getLastRace(): Observable<any> {
 		return this.http.get(`${this.baseURL}/current/last/results.json`);
 	}
+
+	getDrivers(year: number): Observable<any> {
+		return this.http.get(`${this.baseURL}/${year}/drivers.json`);
+	}
 }

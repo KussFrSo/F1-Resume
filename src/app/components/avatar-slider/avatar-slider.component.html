@@ -1,0 +1,19 @@
+<div style="height: 100%">
+	<div class="avatar-slider-header">
+		<h1>Calendario Carreras 2022</h1>
+	</div>
+
+	<p-carousel
+		[value]="drivers"
+		styleClass="custom-carousel"
+		[numVisible]="4"
+		[numScroll]="4"
+		[circular]="false"
+		[showIndicators]="false">
+		<ng-template let-driver pTemplate="item">
+			<div style="height: 100px"></div>
+			<app-avatar [avatar]="driver"></app-avatar>
+			<div style="height: 100px"></div>
+		</ng-template>
+	</p-carousel>
+</div>

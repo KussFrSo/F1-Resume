@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { F1ApiService } from '../../services/f1-api.service';
-import * as xml2js from 'xml2js';
-import { Circuit } from '../../modules/circuit';
-import { last } from 'rxjs';
 
 @Component({
 	selector: 'app-calendar-f1',
