@@ -4,14 +4,20 @@
 		nextRace.toString() === race.round ? 'current-race-card' : 'race-card'
 	">
 	<img
-		src="../../assets/img/races/bahrain.png"
+		src="../../assets/img/races/{{ race.Circuit.circuitId }}.png"
 		height="100"
 		width="100"
-		alt="" />
+		alt=""
+		class="race-img" />
 	<div class="card-body">
 		<h4>{{ race.raceName }}</h4>
 		<div class="d-flex justify-content-center align-items-center">
-			<img src="../../assets/img/flags/bhr.png" alt="" width="20" />
+			<img
+				src="../../assets/img/flags/{{
+					race.Circuit.Location.country
+				}}.png"
+				alt=""
+				width="20" />
 			<h6 class="mx-3">{{ race.date }}</h6>
 		</div>
 	</div>

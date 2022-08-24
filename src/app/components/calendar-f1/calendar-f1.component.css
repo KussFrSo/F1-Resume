@@ -7,8 +7,7 @@
 /* CSS Carousel style */
 
 ::ng-deep .p-carousel-items-content > .p-carousel-items-container{
-    margin-left: 150px;
-    margin-right: -115px;
+    margin: 100px -115px 0px 150px;
 }
 
 ::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
