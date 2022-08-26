@@ -1,29 +1,39 @@
-::ng-deep div.p-avatar{
-    height: 20rem;
-    width: 20rem;
+.avatar-card{
+    width: 256px;
+    transition: all .3s ease;
 }
 
-.avatar-card{
+img{
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 4px;
+    top: -115px;
+    left: 26px;
+    position: relative;
+    background: #091C2B;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 1.3s ease;
+}
+
+.avatar-card:hover img{
+    border: 5px solid white;
+    height: 200px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.avatar-card:hover{
     margin: 16px 16px;
     display: inline-block;
     width: 256px;
-    height: 400px;
+    height: 350px;
     border-radius: 4px;
     background: #D00000;
     border: 2px solid white;
     color: white;
-}
-
-img{
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-    padding: 4px;
-    position: relative;
-    top: -115px;
-    left: 26px;
-    background: #091C2B;
-    border-radius: 100%;
-    cursor: pointer;
-    border: 5px solid white;
+    position: absolute;
+    transition: all .75s ease;   
 }
